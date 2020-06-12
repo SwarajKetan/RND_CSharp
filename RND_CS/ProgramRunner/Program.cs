@@ -4,8 +4,12 @@ using System;
 using System.Diagnostics;
 using System.Linq;
 namespace ProgramRunner
-{    
-
+{
+    public sealed class RunThisAttribute : Attribute { }
+    public abstract class Runnable
+    {
+        public abstract void Run(string[] args);
+    }
     /// <summary>
     /// Do not make any change here
     /// </summary>

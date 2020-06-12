@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProgramRunner
 {
-    [RunThis]
+    //[RunThis]
     public class MyDemoProgram1 : Runnable
     {
         public override void Run(string[] args)
