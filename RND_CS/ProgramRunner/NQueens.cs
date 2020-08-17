@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TinyRunner;
 
 namespace ProgramRunner
 {
-    //[RunThis]
-    public class MyDemoProgram1 : Runnable
+    public class NQueens : Runner
     {
         public override void Run(string[] args)
         {
-            // Write ur program here
+            throw new NotImplementedException();
         }
     }
 }

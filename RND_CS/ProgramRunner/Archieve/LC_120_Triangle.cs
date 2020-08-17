@@ -1,11 +1,11 @@
-﻿using System;
+﻿using System; using TinyRunner;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ProgramRunner
 {
-    //[RunThis]
-    public class LC_120_Triangle : Runnable
+    [Skip]
+    public class LC_120_Triangle : Runner
     {
         public override void Run(string[] args)
         {

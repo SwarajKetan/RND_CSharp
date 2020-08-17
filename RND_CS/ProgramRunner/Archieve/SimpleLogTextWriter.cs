@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; using TinyRunner;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProgramRunner
 {
-    [RunThis]
-    public class SimpleLogTextWriter : Runnable
+    [Skip]
+    //[RunThis]
+    public class SimpleLogTextWriter : Runner
     {
 
         private System.Timers.Timer Writer = null;

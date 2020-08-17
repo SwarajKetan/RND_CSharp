@@ -1,47 +1,10 @@
-﻿
-
-using System;
-using System.Diagnostics;
-using System.Linq;
-namespace ProgramRunner
+﻿namespace ProgramRunner
 {
-    public sealed class RunThisAttribute : Attribute { }
-    public abstract class Runnable
-    {
-        public abstract void Run(string[] args);
-    }
-    /// <summary>
-    /// Do not make any change here
-    /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Program p = new Program();
-            Stopwatch sw = new Stopwatch();
-            var runables = p.GetType().Assembly.GetExportedTypes()
-                .Where(x => x.BaseType == typeof(Runnable));
-
-            foreach(var r in runables)
-            {
-                var ca = r.GetCustomAttributes(false).FirstOrDefault(x => x.GetType() == typeof(RunThisAttribute));
-                if(ca!= null)
-                {
-                    try
-                    {                        
-                        Console.WriteLine($"Started running :  {r.Name}\n");
-                        var o = (Runnable)Activator.CreateInstance(r);
-                        sw.Start();
-                        o?.Run(args);
-                    }
-                    finally
-                    {
-                        sw.Stop();
-                        Console.WriteLine($"Finished running :  {r.Name} Completed in {sw.ElapsedMilliseconds} ms \n");
-                    }
-                }
-            }
-
+            TinyRunner.TinyRunner.Attach(new Program(), args);
         }
     }
 }
