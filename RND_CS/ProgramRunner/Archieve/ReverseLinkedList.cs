@@ -50,7 +50,9 @@ namespace ProgramRunner
             };
 
 
-            var r = Reverse(head);
+            
+            _ = Reverse(head);
+            var res = rev;
         }
     }
 }

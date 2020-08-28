@@ -1,4 +1,5 @@
-﻿using TinyRunner;
+﻿using System;
+using TinyRunner;
 
 namespace ProgramRunner
 {
@@ -9,12 +10,16 @@ namespace ProgramRunner
         {
             public bool IsMatch(string s, string p)
             {
-                int[] arr = new int[1];
-                int i = 0;
-                arr[i] = ++i; // we can do
+                //if (p == string.Empty) return s.Length == 0;
 
-                return false;
+                //string m = string.Empty;
+                //for (int i = 0; i < s.Length; i++)
+                //{
+                //   if(s[i] == )
+                //}
+                return true;
             }
+
         }
 
         public override void Run(string[] args)

@@ -64,5 +64,10 @@ namespace TinyRunner
             }
             return sb.ToString();
         }
+
+        public virtual void TearDown()
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System; using TinyRunner;
+﻿using System;
+using TinyRunner;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,33 +23,60 @@ namespace ProgramRunner
 
         public class Solution
         {
-            // 1 -> 2 -> 3 -> 4 -> 5
-            int tc = 0;
+
             public ListNode ReverseKGroup(ListNode head, int k)
             {
-                return ReverseKGroupX(head, k, 1);
+                int pos = 0;
+                ListNode res = null;
+                ListNode cur = head;
+                ListNode thead = head;
+                while(cur != null)
+                {
+                    ++pos;
+                    if(pos % k == 1)
+                    {
+                        thead = cur;
+                    }
+
+                    if(pos % k == 0)
+                    {
+                        rev = null;
+                        var last = Reverse(thead, k);
+                        if(res == null)
+                        {
+                            res = rev;
+                        }
+                        cur = nextStart;
+                        last.next = cur;
+                        thead = cur;
+                    }
+                    else
+                    {
+                        cur = cur.next;
+                    }
+
+                }
+
+                return res;
             }
 
-            public ListNode ReverseKGroupX(ListNode head, int k, int count)
+            ListNode nextStart = null;
+            ListNode rev = null;
+            ListNode Reverse(ListNode head, int k)
             {
-                // 3
-                if (head == null || head.next == null)
+                if(k == 1)
+                {
+                    nextStart = head.next;
+                    head.next = null;
+                    rev = head;
                     return head;
+                }
 
-                count += 1;
-                ListNode nxt = ReverseKGroupX(head.next, k, count);
-                if (count % k == 0)
-                {
-                    tc = k;
-                    return head;
-                }
-                // 4
-                if (tc > 0)
-                {
-                    nxt.next = head;
-                    tc -= 1;
-                    return nxt;
-                }
+                ListNode r = Reverse(head.next, k - 1);
+
+
+                r.next = head;
+                head.next = null;
                 return head;
             }
 
@@ -65,6 +93,15 @@ namespace ProgramRunner
                         next = new ListNode(4)
                         {
                             next = new ListNode(5)
+                            {
+                                next = new ListNode(6)
+                                {
+                                    next = new ListNode(7)
+                                    {
+                                        next = new ListNode(8)
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -72,7 +109,7 @@ namespace ProgramRunner
 
             var sol = new Solution();
             //sol.ReverseKGroup(head, 3);
-            sol.ReverseKGroup(head, 2);
+            ListNode res = sol.ReverseKGroup(head, 3);
         }
     }
 }
