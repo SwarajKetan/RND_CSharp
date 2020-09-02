@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TinyRunner;
 
 namespace ProgramRunner
 {
-    public class GenerateCombinations : TinyRunner.Runner
+    [Skip]
+    public class KMPPrefixFunction : Runner
     {
-        public void GenerateCombinations(int[] nums)
-        {
-           
-        }
-
         public override void Run(string[] args)
         {
             throw new NotImplementedException();
