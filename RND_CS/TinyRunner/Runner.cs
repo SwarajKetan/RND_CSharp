@@ -28,7 +28,7 @@ namespace TinyRunner
             }
         }
 
-        public void PrintLine(string text, ConsoleColor color)
+        public void PrintLine(string text, ConsoleColor color = ConsoleColor.DarkYellow)
         {
             Console.ForegroundColor = color;
             Console.WriteLine(text);
@@ -63,6 +63,13 @@ namespace TinyRunner
                 sb.Append($"{arr[i]},");
             }
             return sb.ToString();
+        }
+
+        public void Swap<T>(ref T a, ref T b)
+        {
+            T tmp = a;
+            a = b;
+            b = tmp;
         }
 
         public virtual void TearDown()

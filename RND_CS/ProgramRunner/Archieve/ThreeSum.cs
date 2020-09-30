@@ -54,6 +54,19 @@ namespace ProgramRunner
             int[] arr2 = new int[] { 0, 0, 0, 0 };
             var sol = new Solution();
             var res = sol.ThreeSum(arr);
+
+            Debug.AssertAny(() => sol.ThreeSum(arr), (expected) =>
+            {
+                bool pass = 
+                expected[0][0] == -1
+                && expected[0][1] == -1
+                && expected[0][2] == 2 
+                && expected[1][0] == -1
+                && expected[1][1] == 0
+                && expected[1][2] == 1;
+                return pass;
+            });
+
         }
     }
 }

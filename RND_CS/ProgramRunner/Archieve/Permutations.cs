@@ -24,17 +24,14 @@ namespace ProgramRunner
             {
                 if (index >= length)
                 {
-                    Console.WriteLine($"-------Result {string.Join(',', nums)}");
                     result.Add(nums);
                     return;
                 }
 
                 for (int i = index; i < length; i++)
                 {
-                    Console.WriteLine($"Push : i={i} index={index}");
                     Swap(nums, i, index);
                     solve(nums, index + 1, length);
-                    Console.WriteLine($"Pop : i={i} index={index}");
                     Swap(nums, i, index);
 
                 }
