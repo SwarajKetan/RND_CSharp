@@ -12,10 +12,10 @@ namespace TinyRunner
         public static void Assert<T>(Func<T> func, T expected, bool throwOnException = false, Action tearDown = null)
         {
 
-            if(typeof(T).GetInterfaces().Any(x=>x.Name == "IEnumerable" || x.Name == "IList"))
-            {
-                throw new Exception("Can't assert collection type. Please use specific api.");
-            }
+            //if(typeof(T).GetInterfaces().Any(x=>x.Name == "IEnumerable" || x.Name == "IList"))
+            //{
+            //    throw new Exception("Can't assert collection type. Please use specific api.");
+            //}
 
             var actual = func();
             string msg = $"Actual : {actual},\tExpected : {expected}";
@@ -52,7 +52,6 @@ namespace TinyRunner
 
             tearDown?.Invoke();
         }
-
         public static void AssertLinkedList<T>(Func<T> func, T expected, bool throwOnException = false, Action tearDown = null)
              where T : ListNode
         {
@@ -88,12 +87,20 @@ namespace TinyRunner
                 PrintFailure("Failed");
             }
         }
-        public static void PrintLine(string text, ConsoleColor color)
+        public static void PrintLine(string text, ConsoleColor color = ConsoleColor.Yellow)
         {
             Console.ForegroundColor = color;
             Console.WriteLine(text);
             Console.ResetColor();
         }
+
+        public static void Print(string text, ConsoleColor color = ConsoleColor.Yellow)
+        {
+            Console.ForegroundColor = color;
+            Console.Write(text);
+            Console.ResetColor();
+        }
+
         static string Parse<T>(T[] arr)
         {
             return string.Join(',', arr);

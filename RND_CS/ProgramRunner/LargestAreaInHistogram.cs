@@ -5,9 +5,9 @@ using TinyRunner;
 
 namespace ProgramRunner
 {
+    [Skip]
     public class LargestAreaInHistogram : Runner
     {
-        [Skip]
         public class Solution
         {
             public int LargestRectangleArea(int[] arr)

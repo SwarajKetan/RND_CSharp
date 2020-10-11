@@ -20,8 +20,10 @@ namespace ProgramRunner
                 return result;
             }
 
+            int counter = 1;
             void solve(int[] nums, int index, int length)
             {
+                //Debug.PrintLine($"----------{counter++}----------------");
                 if (index >= length)
                 {
                     result.Add(nums);
@@ -30,53 +32,14 @@ namespace ProgramRunner
 
                 for (int i = index; i < length; i++)
                 {
-                    Swap(nums, i, index);
+                    Debug.PrintLine($"------index = {index} i = {i}-----------");
+                    //Swap(nums, i, index);
                     solve(nums, index + 1, length);
-                    Swap(nums, i, index);
+                    //Swap(nums, i, index);
+                    Debug.PrintLine($"------index = {index} i = {i}-----------", ConsoleColor.Green);
 
                 }
             }
-
-            //public IList<IList<int>> Permute(int[] nums)
-            //{
-            //    for (int i = 0; i < nums.Length; i++)
-            //    {
-            //        Swap(nums, 0, i);
-            //        var k = GetCom(nums, 0);
-            //        Swap(nums, 0, i);
-            //        foreach (var itm in k)
-            //        {
-            //            Console.WriteLine($"{string.Join(',', itm)}");
-            //            result.Add(itm);
-            //        }
-
-            //    }
-            //    return result;
-            //}
-
-            //List<IList<int>> GetCom(int[] nums, int index)
-            //{
-            //    if(index == nums.Length - 1)
-            //        return new List<IList<int>>() { new int[] { nums[index] } };
-
-            //    var combos = GetCom(nums, index + 1);
-            //    var tmp = new List<IList<int>>();
-            //    foreach(var com in combos)
-            //    {
-            //        tmp.Add(Merge(new int[] { nums[index] }, com.ToArray()));
-            //        tmp.Add(Merge(com.ToArray(), new int[] { nums[index] }));
-            //    }
-            //    return tmp;
-            //}
-
-            //List<int> Merge(int[] left,int[] right)
-            //{
-            //    var res = new List<int>(left);
-            //    foreach (var n in right)
-            //        res.Add(n);
-            //    return res;                
-            //}
-
             void Swap(int[] arr, int i, int j)
             {
                 int tmp = arr[i];

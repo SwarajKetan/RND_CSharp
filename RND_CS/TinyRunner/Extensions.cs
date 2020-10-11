@@ -10,5 +10,17 @@ namespace TinyRunner
         {
             throw new NotImplementedException();
         }
+        public static void Print<T>(this T[] arr, string msg = "")
+        {
+            Debug.Print($"{msg}");
+            foreach (var x in arr) Debug.Print($"{x},");
+            Debug.Print("\n");
+        }
+
+        //public static T As<T>(this string s)
+        //{
+
+        //}
+
     }
 }
