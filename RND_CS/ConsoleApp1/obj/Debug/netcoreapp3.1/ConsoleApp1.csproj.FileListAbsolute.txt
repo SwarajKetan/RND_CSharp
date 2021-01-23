@@ -1,0 +1,13 @@
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csprojAssemblyReference.cache
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache

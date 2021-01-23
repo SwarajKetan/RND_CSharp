@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SecretBox": {
+      "commandName": "Project",
+      "commandLineArgs": "sbox -get"
+    }
+  }
+}

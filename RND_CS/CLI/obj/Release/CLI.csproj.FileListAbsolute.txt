@@ -1,0 +1,7 @@
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\CLI\bin\Release\CLI.exe.config
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\CLI\bin\Release\CLI.exe
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\CLI\bin\Release\CLI.pdb
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\CLI\obj\Release\CLI.csprojAssemblyReference.cache
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\CLI\obj\Release\CLI.csproj.CoreCompileInputs.cache
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\CLI\obj\Release\CLI.exe
+C:\dev\GitHub\Source\Repos\RND_CSharp\RND_CS\CLI\obj\Release\CLI.pdb
