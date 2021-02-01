@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CLI2": {
+      "commandName": "Project",
+      "commandLineArgs": "-m print -n abc -a 12 -h 177"
+    }
+  }
+}
