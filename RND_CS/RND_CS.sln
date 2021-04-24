@@ -17,9 +17,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLI", "CLI\CLI.csproj", "{E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretBox", "SecretBox\SecretBox.csproj", "{B850B02D-A74A-4DC9-8E39-B742ACCF5169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtiqaSvc", "AtiqaSvc\AtiqaSvc.csproj", "{7C36E82D-5149-4903-A0E8-99BE33931B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtiqaSvc", "AtiqaSvc\AtiqaSvc.csproj", "{7C36E82D-5149-4903-A0E8-99BE33931B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtiqaWebSvc", "AtiqaWebSvc\AtiqaWebSvc.csproj", "{3407777C-E9F2-4025-A01A-B7089C3BFAB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtiqaWebSvc", "AtiqaWebSvc\AtiqaWebSvc.csproj", "{3407777C-E9F2-4025-A01A-B7089C3BFAB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{122A884A-6E2D-4ADA-99C3-3970B6A869B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerService1", "WorkerService1\WorkerService1.csproj", "{DA2BABE9-7EEC-49FA-8DAD-D3BC391DD625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService1", "WindowsService1\WindowsService1.csproj", "{A2274922-0FE3-4BD9-B466-4A4A1BAC9CB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{3407777C-E9F2-4025-A01A-B7089C3BFAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3407777C-E9F2-4025-A01A-B7089C3BFAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3407777C-E9F2-4025-A01A-B7089C3BFAB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122A884A-6E2D-4ADA-99C3-3970B6A869B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122A884A-6E2D-4ADA-99C3-3970B6A869B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122A884A-6E2D-4ADA-99C3-3970B6A869B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122A884A-6E2D-4ADA-99C3-3970B6A869B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2BABE9-7EEC-49FA-8DAD-D3BC391DD625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2BABE9-7EEC-49FA-8DAD-D3BC391DD625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2BABE9-7EEC-49FA-8DAD-D3BC391DD625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2BABE9-7EEC-49FA-8DAD-D3BC391DD625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2274922-0FE3-4BD9-B466-4A4A1BAC9CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2274922-0FE3-4BD9-B466-4A4A1BAC9CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2274922-0FE3-4BD9-B466-4A4A1BAC9CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2274922-0FE3-4BD9-B466-4A4A1BAC9CB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,13 @@
+﻿Installing assembly 'C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Committing assembly 'C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\github\RND_CSharp\RND_CS\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Remove InstallState file because there are no installers.
